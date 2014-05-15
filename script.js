@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}
 	}
 	var gradient = function(number){
-		$('.axe').css({"-webkit-transform": "rotate("+number+"deg)"});
+		$('.axe').css({"-webkit-transform": "rotate("+number*-1+"deg)"});
 	}
 
 	var firepoint = function(){
