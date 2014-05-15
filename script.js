@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}
 	}
 	var gradient = function(number){
-		$('.axe').css({"-webkit-transform": "rotate("+number*10+"deg)"});
+		$('.axe').css({"-webkit-transform": "rotate("+number+"deg)"});
 	}
 
 	var firepoint = function(){
@@ -38,8 +38,8 @@ $(document).ready(function(){
 		var x = event.accelerationIncludingGravity.x; // 스마트폰 센서 값 받아오는 명령어 x값
 		var y = event.accelerationIncludingGravity.y; // y값
 		var z = event.accelerationIncludingGravity.z; // z값
+		gradient(Math.round(x*10));
 		x = Math.round(x); // 1이하 소숫점 버림.
-		gradient(Math.round(x));
 		temp_x = x;
 		
 		$("#xVal").html(Math.round(x));
