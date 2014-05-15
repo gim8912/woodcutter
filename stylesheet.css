@@ -27,5 +27,10 @@ div{
 	height: 296px;
 	top : 130px;
 	left : 220px;
-	background-image: url('img/woodaxe.png');	
+	background-image: url('img/woodaxe.png');
+	
+	-ms-transform:rotate(30deg);  
+	-webkit-transform:rotate(30deg);
+	transform:rotate(30deg);
+
 }
